@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".CheckTimeActivity">
+
+    <EditText
+        android:id="@+id/timeEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="4"
+        android:hint="@string/enterTimeHint"
+        android:inputType="time"
+        android:maxLength="4"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="52sp" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/timeEnter"
+        android:ems="1"
+        android:hint="№"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="52sp" />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/user"
+        android:onClick="checkTimeClick"
+        android:text="@string/checkTime"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fullTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeEnter"
+        android:layout_below="@+id/timeEnter"
+        android:layout_marginTop="40dp"
+        android:text="@string/null_time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="52sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fullTime"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/fullTime"
+        android:text="@string/fullTime"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/timeOneUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fullTime"
+        android:layout_below="@+id/fullTime"
+        android:layout_marginTop="25dp"
+        android:text="@string/null_time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="52sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/timeOneUser"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/timeOneUser"
+        android:text="@string/timeOne"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeOneUser"
+        android:layout_below="@+id/timeOneUser"
+        android:layout_marginTop="25dp"
+        android:text="@string/null_time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="52sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/endTime"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/endTime"
+        android:text="@string/endTime"
+        android:textSize="22sp" />
+
+</RelativeLayout>

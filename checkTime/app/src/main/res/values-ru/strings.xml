@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Счетовод</string>
+    <string name="fullTime">Общее время отдыха операторов</string>
+    <string name="timeOne">Время одного оператора</string>
+    <string name="endTime">Конец отдыха первого оператора</string>
+    <string name="checkTime">Ввод</string>
+    <string name="enterTimeHint">время</string>
+    <string name="null_time">00:00</string>
+</resources>

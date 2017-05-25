@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CheckTime</string>
+    <string name="fullTime">Full time rest users</string>
+    <string name="timeOne">Time one user</string>
+    <string name="endTime">Time end one user</string>
+    <string name="checkTime">Enter</string>
+    <string name="enterTimeHint">time</string>
+    <string name="null_time">00:00</string>
+</resources>
