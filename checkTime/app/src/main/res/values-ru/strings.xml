@@ -7,4 +7,7 @@
     <string name="checkTime">Ввод</string>
     <string name="enterTimeHint">время</string>
     <string name="null_time">00:00</string>
+    <string name="messageNull">Введите время и количество операторов</string>
+    <string name="messageCorrectTime">Проверьте время</string>
+
 </resources>

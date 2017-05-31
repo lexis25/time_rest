@@ -6,4 +6,6 @@
     <string name="checkTime">Enter</string>
     <string name="enterTimeHint">time</string>
     <string name="null_time">00:00</string>
+    <string name="messageNull">Please enter correct time and number operators</string>
+    <string name="messageCorrectTime">Check time</string>
 </resources>

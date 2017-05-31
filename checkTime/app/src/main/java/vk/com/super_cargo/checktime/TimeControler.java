@@ -48,13 +48,19 @@ public class TimeControler {
 
     public static int[] divideTimeUser(int[] time, int users) {
         int[] divideTime = new int[2];
-        int sumMinutes = (((time[0] * ONE_HOUR_MINUTE) + time[1]) / users);
+        int sumMinutes;
+        if (users != 0) {
+            sumMinutes = (((time[0] * ONE_HOUR_MINUTE) + time[1]) / users);
+        } else {
+            sumMinutes = (time[0] * ONE_HOUR_MINUTE) + time[1];
+        }
         if (sumMinutes > 59) {
             divideTime[0] = sumMinutes / ONE_HOUR_MINUTE;
             divideTime[1] = sumMinutes % ONE_HOUR_MINUTE;
         } else {
             divideTime[1] = sumMinutes;
         }
+
         return divideTime;
     }
 
