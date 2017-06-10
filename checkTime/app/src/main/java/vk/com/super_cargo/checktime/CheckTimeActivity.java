@@ -2,6 +2,7 @@ package vk.com.super_cargo.checktime;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -67,8 +68,7 @@ public class CheckTimeActivity extends Activity {
         time = (EditText) findViewById(R.id.timeEnter);
         user = (EditText) findViewById(R.id.user);
 
-        if (time.getText().length() != 0 & user.getText().length() != 0 & time.getText().length() == 4) {
-
+        try {
             timeEnter = String.valueOf(time.getText());
             numUser = Integer.parseInt(user.getText().toString());
 
@@ -89,8 +89,10 @@ public class CheckTimeActivity extends Activity {
             } else {
                 Toast.makeText(this, R.string.messageCorrectTime, Toast.LENGTH_SHORT).show();
             }
-        } else {
+        } catch (Exception e) {
             Toast.makeText(this, R.string.messageNull, Toast.LENGTH_SHORT).show();
+            timeEnter = String.valueOf(R.string.null_time);
+            numUser = 0;
             fullTime.setText(R.string.null_time);
             timeOneUser.setText(R.string.null_time);
             endTime.setText(R.string.null_time);

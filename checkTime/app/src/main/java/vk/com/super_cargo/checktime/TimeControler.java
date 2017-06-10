@@ -7,12 +7,16 @@ public class TimeControler {
     private static final int ONE_HOUR_MINUTE = 60;
 
     public static boolean validateTime(String time) {
-        int hour = Integer.parseInt(time.substring(0, 2));
-        int minute = Integer.parseInt(time.substring(2));
-        if (hour > 23 | minute > 59) {
+        try {
+            int hour = Integer.parseInt(time.substring(0, 2));
+            int minute = Integer.parseInt(time.substring(2));
+            if (hour > 23 | minute > 59 | time.length() < 4) {
+                return false;
+            } else {
+                return true;
+            }
+        }catch (NullPointerException e){
             return false;
-        } else {
-            return true;
         }
     }
 
